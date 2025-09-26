@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | Greenwood High School</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        <img class="logo" src="https://images.pexels.com/photos/33794385/pexels-photo-33794385.jpeg" alt="Greenwood High logo" />
+        <div>
+          <h1>Greenwood High School</h1>
+          <p class="motto">Learning Today, Leading Tomorrow</p>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+        <ul id="mainNav" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="events-intro reveal container">
+    <h2>Upcoming Events</h2>
+    <p>Stay connected with Greenwood’s vibrant calendar of academic, cultural, and community events. From science fairs to seasonal celebrations, there’s always something happening on campus.</p>
+  </section>
+
+  <!-- Filter -->
+  <section class="filter reveal container">
+    <label for="event-filter">Filter by category:</label>
+    <select id="event-filter">
+      <option value="all">All</option>
+      <option value="academic">Academic</option>
+      <option value="community">Community</option>
+      <option value="arts">Arts</option>
+      <option value="sports">Sports</option>
+    </select>
+  </section>
+
+  <!-- Events List -->
+  <section class="event-list reveal container">
+    <article class="event-card" data-category="academic">
+      <h3>Science Symposium</h3>
+      <p class="date">November 3, 2025</p>
+      <p>Students present research projects and innovations in science and technology.</p>
+    </article>
+
+    <article class="event-card" data-category="community">
+      <h3>Winter Carnival</h3>
+      <p class="date">December 10, 2025</p>
+      <p>Celebrate the season with games, food, and performances by students and staff.</p>
+    </article>
+
+    <article class="event-card" data-category="academic">
+      <h3>College Prep Workshop</h3>
+      <p class="date">October 28, 2025</p>
+      <p>Guidance counselors host sessions on college applications and scholarships.</p>
+    </article>
+
+    <article class="event-card" data-category="arts">
+      <h3>Fall Theater Showcase</h3>
+      <p class="date">November 15, 2025</p>
+      <p>Drama students perform scenes from classic and contemporary plays.</p>
+    </article>
+
+    <article class="event-card" data-category="sports">
+      <h3>Inter-School Track Meet</h3>
+      <p class="date">October 22, 2025</p>
+      <p>Greenwood athletes compete in sprints, relays, and field events against neighboring schools.</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>123 Education Lane</p>
+        <p>Greenwood, CA 90210</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: info@greenwoodhigh.edu</p>
+      </div>
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Greenwood High School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

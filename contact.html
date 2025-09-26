@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Greenwood High School</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        <img class="logo" src="https://images.pexels.com/photos/33794385/pexels-photo-33794385.jpeg" alt="Greenwood High logo" />
+        <div>
+          <h1>Greenwood High School</h1>
+          <p class="motto">Learning Today, Leading Tomorrow</p>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+        <ul id="mainNav" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="contact-intro reveal container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out with questions, feedback, or to schedule a visit.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section reveal container">
+    <form id="contact-form" class="contact-form" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Contact Details -->
+  <section class="contact-details reveal container">
+    <h3>School Address</h3>
+    <p>123 Education Lane, Greenwood, CA 90210</p>
+    <p>Phone: (555) 123-4567</p>
+    <p>Email: info@greenwoodhigh.edu</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>123 Education Lane</p>
+        <p>Greenwood, CA 90210</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: info@greenwoodhigh.edu</p>
+      </div>
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Greenwood High School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
