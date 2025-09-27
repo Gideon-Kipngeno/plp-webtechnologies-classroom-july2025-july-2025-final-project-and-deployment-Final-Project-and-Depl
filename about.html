@@ -1,81 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Greenwood High School</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="header-inner container">
       <a class="brand" href="index.html">
-        <img class="logo" src="https://images.pexels.com/photos/33794385/pexels-photo-33794385.jpeg" alt="Greenwood High logo">
+        <img class="logo" src="https://images.pexels.com/photos/33794385/pexels-photo-33794385.jpeg" alt="Greenwood High logo" />
         <div>
           <h1>Greenwood High School</h1>
           <p class="motto">Learning Today, Leading Tomorrow</p>
         </div>
       </a>
-
       <nav class="nav" aria-label="Main navigation">
         <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
         <ul id="mainNav" class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media Gallery</a></li>
           <li><a href="academics.html">Academics</a></li>
           <li><a href="admissions.html">Admissions</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
 
   <!-- Intro -->
-  <section class="about-intro">
-    <h2>About Greenwood High School</h2>
+  <section class="about-intro reveal container">
+    <h2>Welcome to Greenwood High</h2>
     <p>
-      Founded in 1985, Greenwood High School has been a beacon of academic excellence and holistic development. 
-      Our mission is to nurture future leaders through rigorous education and a supportive community.
+      Greenwood High School has been shaping minds since 1985. Our mission is to empower students to lead with integrity, think critically, and contribute meaningfully to society.
     </p>
   </section>
 
-  <!-- Cards Grid -->
-  <div class="about-grid">
-    <!-- History -->
-    <section class="about-card about_history">
+  <!-- About Grid -->
+  <section class="about-grid reveal container">
+    <article class="about-card">
       <h3>Our History</h3>
       <p>
-        From humble beginnings, Greenwood has grown into one of the region’s most respected institutions. 
-        We pride ourselves on our legacy of innovation, inclusivity, and integrity.
+        From a single classroom to a thriving campus, Greenwood High has grown through decades of innovation and community support. Our legacy is built on academic excellence and inclusive values.
       </p>
-    </section>
+    </article>
 
-    <!-- Leadership -->
-    <section class="about-card about_leadership">
+    <article class="about-card">
       <h3>Leadership & Faculty</h3>
       <p>
-        Our dedicated team of educators and administrators bring decades of experience and a passion for student success.
+        Our leadership team and faculty are passionate educators committed to student growth. With diverse expertise and a shared vision, they foster a culture of excellence and care.
       </p>
-    </section>
+    </article>
 
-    <!-- Values -->
-    <section class="about-card about_core">
+    <article class="about-card">
       <h3>Core Values</h3>
       <ul>
         <li>Integrity</li>
         <li>Excellence</li>
         <li>Inclusivity</li>
         <li>Innovation</li>
+        <li>Community</li>
       </ul>
-    </section>
+    </article>
+  </section>
+  <!-- Timeline Section -->
+<section class="about-timeline reveal container">
+  <h2>Our Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="year">1985</span>
+      <p>Greenwood High founded with a single classroom and a bold vision for inclusive education.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="year">1995</span>
+      <p>Expanded to include science labs, arts programs, and a full secondary curriculum.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="year">2010</span>
+      <p>Launched our digital learning initiative and partnered with global education networks.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="year">2025</span>
+      <p>Celebrating 40 years of excellence with new facilities and community outreach programs.</p>
+    </div>
   </div>
+</section>
+
+<!-- Leadership Showcase -->
+<section class="about-leadership reveal container">
+  <h2>Meet Our Leadership</h2>
+  <div class="leader-grid">
+    <div class="leader-card">
+      <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg" alt="Principal Jane Doe">
+      <h3>Jane Doe</h3>
+      <p>Principal – Championing student success and inclusive leadership since 2015.</p>
+    </div>
+    <div class="leader-card">
+      <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Dean John Smith">
+      <h3>John Smith</h3>
+      <p>Dean of Academics – Driving curriculum innovation and faculty development.</p>
+    </div>
+  </div>
+</section>
+<!-- Stats Section -->
+<section class="about-stats reveal container">
+  <h2>Greenwood by the Numbers</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="counter" data-target="1200">0</span>
+      <p>Students Enrolled</p>
+    </div>
+    <div class="stat-card">
+      <span class="counter" data-target="85">0</span>
+      <p>Faculty Members</p>
+    </div>
+    <div class="stat-card">
+      <span class="counter" data-target="40">0</span>
+      <p>Years of Excellence</p>
+    </div>
+    <div class="stat-card">
+      <span class="counter" data-target="15">0</span>
+      <p>Clubs & Societies</p>
+    </div>
+  </div>
+</section>
+
+<!-- Prospectus Download -->
+<section class="about-download reveal container">
+  <h2>Download Our Prospectus</h2>
+  <p>Explore our programs, values, and campus life in detail. Download the Greenwood High prospectus to learn more.</p>
+  <a href="#" class="cta-button">📄 Download Prospectus (PDF)</a>
+</section>
+<!-- Video Tour Section -->
+<section class="about-video reveal container">
+  <h2>Explore Greenwood High</h2>
+  <p>Take a virtual walk through our campuses, classrooms, and student life. These videos showcase our facilities, values, and vibrant community.</p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/RuDbXGGEC5Y" title="IB Campus Tour" allowfullscreen></iframe>
+      <h3>IB Campus Tour</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/lggVoCE-2ak" title="Sarjapur Campus Walkthrough" allowfullscreen></iframe>
+      <h3>Sarjapur Campus Walkthrough</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/fbTHTDwzL34" title="Full Campus Experience" allowfullscreen></iframe>
+      <h3>Full Campus Experience</h3>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CTA Banner -->
+  <section class="cta-banner reveal">
+    <div class="container">
+      <h2>Discover Greenwood High</h2>
+      <p>Explore our programs, meet our faculty, and see how we prepare students for the future.</p>
+      <a href="admissions.html" class="cta-button">Explore Admissions</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-content">
+    <div class="footer-content container">
       <div class="contact-info">
         <h3>Contact Us</h3>
         <p>123 Education Lane</p>
@@ -95,6 +188,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

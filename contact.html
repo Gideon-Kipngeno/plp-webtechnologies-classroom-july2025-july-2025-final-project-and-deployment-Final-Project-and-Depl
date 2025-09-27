@@ -23,6 +23,7 @@
         <ul id="mainNav" class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media Gallery</a></li>
           <li><a href="academics.html">Academics</a></li>
           <li><a href="admissions.html">Admissions</a></li>
           <li><a href="events.html">Events</a></li>
@@ -34,33 +35,62 @@
   </header>
 
   <!-- Intro -->
-  <section class="contact-intro reveal container">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you. Reach out with questions, feedback, or to schedule a visit.</p>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="contact-form-section reveal container">
-    <form id="contact-form" class="contact-form" novalidate>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Contact Details -->
-  <section class="contact-details reveal container">
-    <h3>School Address</h3>
-    <p>123 Education Lane, Greenwood, CA 90210</p>
-    <p>Phone: (555) 123-4567</p>
-    <p>Email: info@greenwoodhigh.edu</p>
+  <section class="contact-page reveal container">
+    <h2>Get in Touch</h2>
+    <p>Have questions about Greenwood High? Reach out and we’ll respond within 2 working days.</p>
+  
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form" novalidate>
+        <fieldset>
+          <legend>Your Details</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+  
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+  
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" />
+        </fieldset>
+  
+        <fieldset>
+          <legend>Your Message</legend>
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic">
+            <option value="">Select a topic</option>
+            <option value="admissions">Admissions</option>
+            <option value="academics">Academics</option>
+            <option value="events">Events</option>
+            <option value="other">Other</option>
+          </select>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </fieldset>
+  
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+  
+      <!-- Contact Info -->
+      <aside class="contact-info-panel">
+        <h3>School Contact</h3>
+        <p><strong>Address:</strong><br>123 Education Lane, Greenwood, CA 90210</p>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Email:</strong> info@greenwoodhigh.edu</p>
+  
+        <h3>Support Hours</h3>
+        <p>Monday–Friday: 8:30 AM – 4:30 PM</p>
+        <p>Saturday–Sunday: Closed</p>
+  
+        <h3>Follow Us</h3>
+        <p>
+          <a href="#">Facebook</a> |
+          <a href="#">Twitter</a> |
+          <a href="#">Instagram</a>
+        </p>
+      </aside>
+    </div>
   </section>
 
   <!-- Footer -->

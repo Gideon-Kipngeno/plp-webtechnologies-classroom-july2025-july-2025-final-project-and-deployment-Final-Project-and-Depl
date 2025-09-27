@@ -1,74 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admissions | Greenwood High School</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="header-inner container">
       <a class="brand" href="index.html">
-        <img class="logo" src="https://images.pexels.com/photos/33794385/pexels-photo-33794385.jpeg" alt="Greenwood High logo">
+        <img class="logo" src="https://images.pexels.com/photos/33794385/pexels-photo-33794385.jpeg" alt="Greenwood High logo" />
         <div>
           <h1>Greenwood High School</h1>
           <p class="motto">Learning Today, Leading Tomorrow</p>
         </div>
       </a>
-
       <nav class="nav" aria-label="Main navigation">
         <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
         <ul id="mainNav" class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media Gallery</a></li>
           <li><a href="academics.html">Academics</a></li>
           <li><a href="admissions.html">Admissions</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
 
-<!-- Intro -->
-  <section class="admissions-intro">
-    <h2>Admissions</h2>
-    <p>Join Greenwood High and become part of a vibrant learning community. We welcome applications from students of all backgrounds.</p>
+  <!-- Intro -->
+  <section class="admissions-intro reveal container">
+    <h2>Apply to Greenwood High</h2>
+    <p>We welcome applications from students of all backgrounds. Here's everything you need to know to get started.</p>
   </section>
 
-  <!-- Grid -->
-  <div class="admissions-grid">
-    <!-- Process -->
-    <section class="admissions-card">
-      <h3>Application Process</h3>
+  <!-- Admissions Grid -->
+  <section class="admissions-grid reveal container">
+    <!-- Application Process -->
+    <article class="admissions-card">
+      <h3>Application Steps</h3>
       <ol>
-        <li>Submit online application</li>
-        <li>Provide academic transcripts</li>
-        <li>Attend interview and placement test</li>
-        <li>Receive admission decision</li>
+        <li>Complete the online application form</li>
+        <li>Upload academic transcripts and ID</li>
+        <li>Submit a recommendation letter</li>
+        <li>Attend an interview and placement test</li>
+        <li>Receive your admission decision</li>
       </ol>
-    </section>
+      <a href="#" class="cta-button">Start Application</a>
+    </article>
 
-    <!-- Requirements -->
-    <section class="admissions-card">
-      <h3>Requirements</h3>
-      <p>Applicants must provide proof of prior academic performance, a recommendation letter, and a completed application form.</p>
-    </section>
+    <!-- Entry Requirements -->
+    <article class="admissions-card">
+      <h3>Entry Requirements</h3>
+      <ul>
+        <li>Minimum GPA or KCPE/KCSE scores</li>
+        <li>Recommendation from a teacher or mentor</li>
+        <li>Proof of identity and age</li>
+        <li>Completed application form</li>
+      </ul>
+    </article>
 
     <!-- Downloads -->
-    <section class="admissions-card">
-      <h3>Downloadable Forms</h3>
-      <p><a href="#">Download Application Form (PDF)</a></p>
-    </section>
-  </div>
+    <article class="admissions-card">
+      <h3>Downloadable Resources</h3>
+      <p><a href="#">📄 Application Form (PDF)</a></p>
+      <p><a href="#">📄 Fee Structure</a></p>
+      <p><a href="#">📄 Interview Preparation Guide</a></p>
+    </article>
+  </section>
+  <section class="admissions-why reveal container">
+    <h3>Why Choose Greenwood High?</h3>
+    <ul class="why-list">
+      <li>🎓 Proven academic excellence across national and international benchmarks</li>
+      <li>🧑‍🏫 Experienced faculty with a passion for student success</li>
+      <li>🌱 Inclusive, values-driven learning environment</li>
+      <li>🧪 Hands-on labs, maker spaces, and digital classrooms</li>
+      <li>🌍 Global exchange and leadership opportunities</li>
+      <li>🏅 Award-winning extracurricular programs</li>
+    </ul>
+  </section>
 
+  <!-- Support Section -->
+  <section class="admissions-support reveal container">
+    <h3>Need Help?</h3>
+    <p>Our admissions team is here to guide you through every step. Reach out for personalized support.</p>
+    <ul>
+      <li><strong>Email:</strong> admissions@greenwoodhigh.edu</li>
+      <li><strong>Phone:</strong> (555) 123-4567</li>
+      <li><strong>Office Hours:</strong> Mon–Fri, 9:00 AM – 4:00 PM</li>
+    </ul>
+    <a href="contact.html" class="cta-button">Contact Admissions</a>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-content">
+    <div class="footer-content container">
       <div class="contact-info">
         <h3>Contact Us</h3>
         <p>123 Education Lane</p>
@@ -88,6 +118,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
