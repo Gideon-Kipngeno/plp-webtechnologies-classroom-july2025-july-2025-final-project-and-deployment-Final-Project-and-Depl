@@ -1046,12 +1046,268 @@
      transform: translateX(0);
      opacity: 1;
 }
-/* Responsive tweaks */
- @media (max-width: 480px) {
-     .about-download, .about-video {
-         padding: 2rem 1rem;
-    }
+/* Responsive for tablets and mobiles */
+@media (max-width: 768px) {
+
+  /* ABOUT INTRO - stack content and reduce padding */
+  .about-intro {
+    padding: 4rem 1.5rem;
+    min-height: auto;
+  }
+  .about-intro h2 {
+    font-size: 2.2rem;
+  }
+  .about-intro p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  /* ABOUT VALUES grid becomes single column */
+  .about-values {
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+  .about-values .card {
+    padding: 1.5rem;
+  }
+  .about-values h3 {
+    font-size: 1.3rem;
+  }
+  .about-values p {
+    font-size: 0.95rem;
+  }
+
+  /* Promise section grid - single column */
+  .grid-3 {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+  .about-promise.card {
+    padding: 16px;
+  }
+  .about-promise.card h3 {
+    font-size: 1.3rem;
+  }
+  .about-promise.card p {
+    font-size: 0.95rem;
+  }
+
+  /* About Grid Wrapper and cards - smaller padding */
+  .about-grid-wrapper {
+    padding: 2rem 1rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 90%;
+  }
+  .about-card {
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .about-card h3 {
+    font-size: 1.4rem;
+  }
+  .about-card p, .about-card ul li {
+    font-size: 0.95rem;
+  }
+
+  /* Timeline Section: height auto, hide SVG */
+  .timeline-wrapper {
+    height: auto;
+  }
+  .timeline-road {
+    display: none;
+  }
+  .timeline-item {
+    position: static;
+    margin: 1.5rem auto;
+    width: 90%;
+    border-radius: 12px;
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+  .timeline-item .year {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Leadership Section */
+  .about-leadership {
+    padding: 2rem 1rem;
+  }
+  .about-leadership h2 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
+  .leader-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  .leader-card {
+    padding: 15px;
+  }
+  .leader-card h3 {
+    font-size: 1.2rem;
+  }
+  .leader-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Stats Section */
+  .about-stats {
+    padding: 2rem 1rem;
+  }
+  .about-stats h2 {
+    font-size: 1.8rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  .stat-card {
+    padding: 30px;
+  }
+  .stat-card .counter {
+    font-size: 32px;
+  }
+  .stat-card p {
+    font-size: 1rem;
+  }
+
+  /* Prospectus and Video Sections padding */
+  .about-download, .about-video {
+    padding: 2.5rem 1rem;
+  }
+  .about-download h2, .about-video h2 {
+    font-size: 1.7rem;
+  }
+  .about-download p, .about-video p {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .video-card h3 {
+    font-size: 1rem;
+  }
 }
+
+/* Extra small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+
+  /* ABOUT INTRO */
+  .about-intro {
+    padding: 3rem 1rem;
+  }
+  .about-intro h2 {
+    font-size: 1.8rem;
+  }
+  .about-intro p {
+    font-size: 0.9rem;
+  }
+
+  /* ABOUT VALUES cards smaller font and padding */
+  .about-values {
+    padding: 1rem 0.5rem;
+  }
+  .about-values .card {
+    padding: 1rem;
+  }
+  .about-values h3 {
+    font-size: 1.2rem;
+  }
+  .about-values p {
+    font-size: 0.9rem;
+  }
+
+  /* Promise cards */
+  .about-promise.card {
+    padding: 12px;
+  }
+  .about-promise.card h3 {
+    font-size: 1.2rem;
+  }
+  .about-promise.card p {
+    font-size: 0.9rem;
+  }
+
+  /* About Grid */
+  .about-grid-wrapper {
+    padding: 1.5rem 0.5rem;
+  }
+  .about-grid {
+    gap: 16px;
+    padding: 0 0.5rem;
+  }
+  .about-card {
+    padding: 16px;
+  }
+  .about-card h3 {
+    font-size: 1.2rem;
+  }
+  .about-card p, .about-card ul li {
+    font-size: 0.9rem;
+  }
+
+  /* Leadership */
+  .leader-card {
+    padding: 12px;
+  }
+  .leader-card h3 {
+    font-size: 1rem;
+  }
+  .leader-card p {
+    font-size: 0.85rem;
+  }
+
+  /* Stats */
+  .stat-card {
+    padding: 20px;
+  }
+  .stat-card .counter {
+    font-size: 28px;
+  }
+  .stat-card p {
+    font-size: 0.85rem;
+  }
+
+  /* Prospectus and Video Section */
+  .about-download, .about-video {
+    padding: 1.5rem 1rem;
+  }
+  .about-download h2, .about-video h2 {
+    font-size: 1.5rem;
+  }
+  .about-download p, .about-video p {
+    font-size: 0.9rem;
+  }
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .video-card h3 {
+    font-size: 0.9rem;
+  }
+}
+
+/* clickable elements on mobile */
+.video-card,
+.cta-button {
+  touch-action: manipulation;
+}
+
 /* --- Media Gallery --- */
  .media-videos,.media-photos {
      margin: 4rem auto;
